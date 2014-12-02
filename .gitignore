@@ -1,0 +1,5 @@
+#.idea
+.idea/
+
+#no use files
+.DS_Store
