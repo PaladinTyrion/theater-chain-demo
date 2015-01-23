@@ -118,9 +118,9 @@ header {
 }
 
 .grid figure hr {
-    border:none;
-    border-top:3px solid orange;
-    height:0;
+    border: none;
+    border-top: 3px solid orange;
+    height: 0;
 }
 
 .grid figcaption a {
