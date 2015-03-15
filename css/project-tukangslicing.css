@@ -1,275 +1,296 @@
-*, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+*, *:after, *:before
+{
+  box-sizing: border-box;
+  moz-box-sizing: border-box;
+  webkit-box-sizing: border-box;
 }
-
-body, html {
-    font-size: 100%;
-    padding: 0;
-    margin: 0;
+body, html
+{
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-.clearfix:before, .clearfix:after {
-    content: " ";
-    display: table;
+.clearfix:before, .clearfix:after
+{
+  content: " ";
+  display: table;
 }
-
-.clearfix:after {
-    clear: both;
+.clearfix:after
+{
+  clear: both;
 }
-
-body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    color: #b3b9bf;
-    background: url("../img/bg.png") /*tpa=http://project.tukangslicing.com/img/bg.png*/ repeat
+body
+{
+  background: url("../images/bg.png") repeat;
+  color: #b3b9bf;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
 }
-
-a {
-    color: #888;
-    text-decoration: none;
+a
+{
+  color: #888;
+  text-decoration: none;
 }
-
-a:hover, a:active {
-    color: #333;
+a:hover,
+a:active
+{
+  color: #333;
 }
-
-#logo {
-    display: flex;
-    width: 500px;
-    padding: 15px 0 15px 60px;
-    background: url("../img/tukangslicing-logo.png") /*tpa=http://project.tukangslicing.com/img/tukangslicing-logo.png*/ no-repeat 0 5px;
-    margin: 0 auto;
-    line-height: 25px;
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+#logo
+{
+  align-items: center;
+  background: url("../images/logo.png") no-repeat 0 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 25px;
+  margin: 0 auto;
+  padding: 15px 0 15px 60px;
+  position: relative;
+  width: 500px;
 }
-
-#logo a {
-    color: #1aa377;
-    display: flex;
-    padding-top: 10px;
-    margin-left: 20px;
-    font-size: 40px;
-    position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+#logo a
+{
+  align-items: center;
+  color: #1aa377;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 40px;
+  justify-content: center;
+  margin-left: 20px;
+  padding-top: 10px;
+  position: relative;
 }
-
-header {
-    position: relative;
-    z-index: 10;
-    padding: 0 0 10px 0;
+header
+{
     background: #35393b;
     border-top: 3px solid #27b184;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    padding: 0 0 10px 0;
+    position: relative;
+    webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    z-index: 10;
 }
-
-.grid {
-    padding: 20px 10px;
-    margin: 0 auto;
+.grid
+{
     list-style: none;
+    margin: 0 auto;
+    padding: 20px 10px;
     text-align: center;
 }
-
-.grid li {
+.grid li
+{
     display: inline-block;
-    width: 440px;
     margin: 0;
     padding: 20px;
+    position: relative;
     text-align: left;
-    position: relative;
+    width: 440px;
 }
-
-.grid figure {
-    margin: 0;
-    position: relative;
-    background: #22ab7f;
+.grid figure
+{
+  border: 1px solid #ccc;
+  margin: 0;
+  position: relative;
 }
-
-.grid figure img {
-    max-width: 100%;
-    display: block;
-    position: relative;
+.grid figure:hover img
+{
+  opacity: 1;
 }
-
-.grid figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px;
+.grid figure img
+{
+  display: block;
+  max-width: 100%;
+  opacity: 0.5;
+  position: relative;
+}
+.grid figcaption
+{
     background: #34495e;
     color: #bdc3c7;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+    top: 0;
 }
-
-.grid figcaption h3 {
+.grid figcaption h3
+{
+    color: #1abc9c;
+    font-size: 24px;
+    line-height: 22px;
     margin: 0;
     padding: 0;
-    font-size: 24px;
-    color: #1abc9c;
-    line-height: 22px;
 }
-
-.grid figure hr {
-    border: none;
-    border-top: 3px solid orange;
-    height: 0;
-}
-
-.grid figcaption a {
-    text-align: center;
-    padding: 10px 0;
-    display: inline-block;
+.grid figcaption a
+{
+    background: 0;
     border-top: 1px solid #1abc9c;
     color: #fff;
-    width: 100%;
-    font-family: inherit;
-    font-size: inherit;
     color: inherit;
-    background: 0;
     cursor: pointer;
     display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
     letter-spacing: 1px;
+    moz-transition: all .3s;
     outline: 0;
+    padding: 10px 0;
     position: relative;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
+    text-align: center;
     transition: all .3s;
+    webkit-transition: all .3s;
+    width: 50%;
 }
-
-.grid figcaption a:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-    width: 0;
-    height: 100%;
-    top: 0;
+#record
+{
     left: 0;
-    background: #27ae60;
 }
-
-.grid figcaption a:before {
-    speak: none;
+#online
+{
+    left: 50%;
+}
+.grid figcaption a:after
+{
+    background: #27ae60;
+    content: '';
+    height: 100%;
+    left: 0;
+    moz-transition: all .3s;
+    position: absolute;
+    top: 0;
+    transition: all .3s;
+    webkit-transition: all .3s;
+    width: 0;
+    z-index: -1;
+}
+.grid figcaption a:before
+{
     font-style: normal;
-    font-weight: normal;
     font-variant: normal;
-    text-transform: none;
+    font-weight: normal;
     line-height: 1;
     position: relative;
-    -webkit-font-smoothing: antialiased;
+    speak: none;
+    text-transform: none;
+    webkit-font-smoothing: antialiased;
 }
-
-.grid figcaption a:hover, .grid figcaption a:active {
-    color: #fff;
+.grid figcaption a:hover,
+.grid figcaption a:active
+{
     background: #1abc9c;
+    color: #fff;
 }
-
-.grid figcaption a:hover:after, .grid figcaption a:active:after {
+.grid figcaption a:hover:after,
+.grid figcaption a:active:after
+{
+  width: 100%;
+}
+.cs-style-4 li
+{
+  moz-perspective: 1700px;
+  moz-perspective-origin: 0 50%;
+  perspective: 1700px;
+  perspective-origin: 0 50%;
+  webkit-perspective: 1700px;
+  webkit-perspective-origin: 0 50%;
+}
+.cs-style-4 figure
+{
+  moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  webkit-transform-style: preserve-3d;
+}
+.cs-style-4 figure > div
+{
+  overflow: hidden;
+}
+.cs-style-4 figure img
+{
+  moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+  webkit-transition: -webkit-transform 0.4s;
+}
+.no-touch .cs-style-4 figure:hover img,
+.cs-style-4 figure.cs-hover img
+{
+  moz-transform: translateX(25%);
+  ms-transform: translateX(25%);
+  transform: translateX(25%);
+  webkit-transform: translateX(25%);
+}
+.cs-style-4 figcaption
+{
+  backface-visibility: hidden;
+  height: 100%;
+  moz-backface-visibility: hidden;
+  moz-transform: rotateY(-90deg);
+  moz-transform-origin: 0 0;
+  moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+  opacity: 0;
+  transform: rotateY(-90deg);
+  transform-origin: 0 0;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+  webkit-backface-visibility: hidden;
+  webkit-transform: rotateY(-90deg);
+  webkit-transform-origin: 0 0;
+  webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  width: 50%;
+}
+.no-touch .cs-style-4 figure:hover figcaption,
+.cs-style-4 figure.cs-hover figcaption
+{
+  moz-transform: rotateY(0deg);
+  moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  opacity: 1;
+  transform: rotateY(0deg);
+  transition: transform 0.4s, opacity 0.1s;
+  webkit-transform: rotateY(0deg);
+  webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+}
+.cs-style-4 figcaption a
+{
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+@media screen and (max-width: 31.5em)
+{
+  .grid
+  {
+    padding: 10px 10px 100px 10px;
+  }
+  .grid li
+  {
+    min-width: 300px;
     width: 100%;
-}
-
-.cs-style-4 li {
-    -webkit-perspective: 1700px;
-    -moz-perspective: 1700px;
-    perspective: 1700px;
-    -webkit-perspective-origin: 0 50%;
-    -moz-perspective-origin: 0 50%;
-    perspective-origin: 0 50%;;;
-}
-
-.cs-style-4 figure {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;;
-}
-
-.cs-style-4 figure > div {
-    overflow: hidden;
-}
-
-.cs-style-4 figure img {
-    -webkit-transition: -webkit-transform .4s;
-    -moz-transition: -moz-transform .4s;
-    transition: transform .4s;
-}
-
-.no-touch .cs-style-4 figure:hover img, .cs-style-4 figure.cs-hover img {
-    -webkit-transform: translateX(25%);
-    -moz-transform: translateX(25%);
-    -ms-transform: translateX(25%);
-    transform: translateX(25%);
-}
-
-.cs-style-4 figcaption {
-    height: 100%;
-    width: 50%;
-    opacity: 0;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform-origin: 0 0;
-    -moz-transform-origin: 0 0;
-    transform-origin: 0 0;
-    -webkit-transform: rotateY(-90deg);
-    -moz-transform: rotateY(-90deg);
-    transform: rotateY(-90deg);
-    -webkit-transition: -webkit-transform .4s, opacity .1s .3s;
-    -moz-transition: -moz-transform .4s, opacity .1s .3s;
-    transition: transform .4s, opacity .1s .3s;
-}
-
-.no-touch .cs-style-4 figure:hover figcaption, .cs-style-4 figure.cs-hover figcaption {
-    opacity: 1;
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-    -webkit-transition: -webkit-transform .4s, opacity .1s;
-    -moz-transition: -moz-transform .4s, opacity .1s;
-    transition: transform .4s, opacity .1s;
-}
-
-.cs-style-4 figcaption a {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-@media screen and (max-width: 31.5em) {
-    .grid {
-        padding: 10px 10px 100px 10px;
-    }
-
-    .grid li {
-        width: 100%;
-        min-width: 300px;
-    }
-
-    .grid figcaption {
-        font-size: 14px;
-    }
-
-    .grid figcaption h3 {
-        font-size: 16px;
-    }
-
-    #logo {
-        width: 310px;
-        position: relative;
-        padding-left: 50px;
-    }
-
-    #logo a {
-        font-size: 30px;
-        margin-left: 20px;
-    }
+  }
+  .grid figcaption
+  {
+    font-size: 14px;
+  }
+  .grid figcaption h3
+  {
+    font-size: 16px;
+  }
+  #logo
+  {
+    padding-left: 50px;
+    position: relative;
+    width: 310px;
+  }
+  #logo a
+  {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  #logo span
+  {
+    bottom: -2px;
+    font-size: 14px;
+    left: 75px;
+    line-height: 12px;
+    width: 225px;
+  }
 }
